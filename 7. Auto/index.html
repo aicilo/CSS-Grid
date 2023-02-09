@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid - Auto</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        background-color: gray;
+        height: 100vh;
+
+        /* Grid */
+        display: grid;
+        /* auto means base on the content */
+        /* grid-template-columns: 1fr auto;  */
+        /* column-gap: 10px; */
+
+        grid-template-rows: 1fr 1fr;
+        /* row-gap: 20px; */
+        
+        /* grid-gap is a combination of column-gap and row-gap */
+        grid-gap: 10px;
+
+        /* default value of grid-auto-flow is row */
+        grid-auto-flow: column;
+        grid-auto-columns: 100px;
+    }
+    .item {
+        background-color: #fff;
+
+    }
+
+    .item-1 {
+
+    }
+    .item-2 {
+
+    }
+    .item-3 {
+
+    }
+    .item-4 {
+
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="item item-1">Item 1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, molestias consectetur est, vel a, ad cupiditate harum dolores dolorem doloribus voluptates autem. Vero rem explicabo minima similique est? Reiciendis, id.</p>
+        </div>
+        <div class="item item-2">Item 2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aut minima, quam magnam hic ullam. Vitae eos nostrum laborum? Excepturi aliquid quam temporibus quisquam, error delectus illo consequatur aspernatur ipsum!</p>
+        </div>
+        <div class="item item-3">Item 3</div>
+        <div class="item item-4">Item 4</div>
+
+    </div>
+</body>
+</html>
